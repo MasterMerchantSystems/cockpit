@@ -3,9 +3,6 @@
 namespace Collections\Controller;
 
 class RestApi extends \LimeExtra\Controller {
-    private function pre($str){
-        echo '<pre>',print_r($str,1),'</pre>';
-    }
 
     public function getBySlug($collection=null) {
         return $this->get($collection, true);
